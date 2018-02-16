@@ -1,0 +1,13 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	Begin text block
+	Text: {Individual Differences Theory} (Carriage return)
+	Text: (Carriage return)
+	Text: {The data collected concerning personality is based on observations of behaviour embedded in a cultures language.}
+	Text: { Thus all individual difference theories mirror the implicit personality theory and collect data about the lexicon descriptions of personality traits.} (Carriage return)
+	Text: (Carriage return)
+	Text: {Therefore, any deductions that result are based on lay descriptions about behaviour.}
+	Text: { It could be argued that this data is based on insider viewpoints, but the process of categorising traits into trait clusters and than measuring individuals personality based on resulting questionnaires turns what may have been insider viewpoint data into outsider viewpoint data.} (Carriage return)
+	End text block
+	Get text block txt
+	Do refOwrite.$loaddata(txt,kWriFmtText)
+	Do refPrompt.$text.$assign('Data was loaded')

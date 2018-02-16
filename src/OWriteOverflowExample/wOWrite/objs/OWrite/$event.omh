@@ -1,0 +1,13 @@
+On evOverflow
+	Switch pOverflowType
+		Case kWriOverflowChar
+			OK message  (Sound bell) {Unable to add more text. Insufficient space.}
+		Case kWriOverflowInsert
+			OK message  (Sound bell) {Unable to insert object. Insufficient space.}
+		Case kWriOverflowPaste
+			OK message  (Sound bell) {Unable to complete paste operation. Insufficient space.}
+		Case kWriOverflowLoad
+			OK message  (Sound bell) {Not all of the data can be displayed as there is insufficient space.}
+		Case kWriOverflowReplace
+			OK message  (Sound bell) {Unable to complete replace operation. Insufficient space.}     ;; called when replacing word during spell-check
+	End Switch

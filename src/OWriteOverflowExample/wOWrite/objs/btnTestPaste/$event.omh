@@ -1,0 +1,7 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	Do method Reset ("First 50 characters were copied from the beginning and pasted at the end")
+	Do refOwrite.$setselection(0,50)
+	Do refOwrite.$savedata(txt,kWriFmtText,kFalse,kWriSaveSelection,kTrue)
+	Do refOwrite.$setselection(kWriSelectEnd,kWriSelectEnd)
+	Copy to clipboard txt
+	Do refOwrite.$editpaste()
